@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoundMax Audífonos</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body{
+            background-color: #111;
+            color: white;
+        }
+
+        header{
+            background-color: black;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1{
+            font-size: 40px;
+            color: #00d9ff;
+        }
+
+        nav{
+            margin-top: 10px;
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+            margin: 15px;
+            font-weight: bold;
+        }
+
+        .hero{
+            height: 400px;
+            background-image: url('https://images.unsplash.com/photo-1505740420928-5e560c06d30e');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h2{
+            font-size: 50px;
+            background-color: rgba(0,0,0,0.6);
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .productos{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 40px;
+            gap: 20px;
+        }
+        .card{
+            background-color: #1c1c1c;
+            width: 280px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0px 0px 15px rgba(0,217,255,0.3);
+            transition: transform 0.3s;
+        }
+
+        .card:hover{
+            transform: scale(1.05);
+        }
+
+        .card img{
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card h3{
+            text-align: center;
+            margin: 15px 0;
+            color: #00d9ff;
+        }
+
+        .card p{
+            text-align: center;
+            padding: 0 15px 15px;
+        }
+
+        .precio{
+            text-align: center;
+            font-size: 22px;
+            color: #00ff88;
+            margin-bottom: 15px;
+        }
+
+        button{
+            display: block;
+            margin: 0 auto 20px;
+            padding: 10px 20px;
+            border: none;
+            background-color: #00d9ff;
+            color: black;
+            font-weight: bold;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover{
+            background-color: #00aacc;
+        }
+
+        footer{
+            background-color: black;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>SoundMax</h1>
+
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Productos</a>
+            <a href="#">Ofertas</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
+    <section class="hero">
+        <h2>Audífonos con Sonido Premium</h2>
+    </section>
+
+    <section class="productos">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1583394838336-acd977736f90" alt="Audífonos Gamer">
+            <h3>Audífonos Gamer</h3>
+            <p>Sonido envolvente y micrófono HD.</p>
+            <div class="precio">$89</div>
+            <button>Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1505740420928-5e560c06d30e" alt="Audífonos Bluetooth">
+            <h3>Bluetooth Pro</h3>
+            <p>Batería de larga duración y gran calidad.</p>
+            <div class="precio">$120</div>
+            <button>Comprar</button>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1546435770-a3e426bf472b" alt="Audífonos Deportivos">
+            <h3>Sport Beats</h3>
+            <p>Ideales para entrenar y correr.</p>
+            <div class="precio">$65</div>
+            <button>Comprar</button>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>© 2026 SoundMax - Todos los derechos reservados</p>
+    </footer>
+
+</body>
+</html>
